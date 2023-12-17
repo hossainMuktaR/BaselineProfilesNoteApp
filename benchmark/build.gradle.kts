@@ -1,3 +1,5 @@
+import com.android.build.api.dsl.ManagedVirtualDevice
+
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidTest)
@@ -23,6 +25,20 @@ android {
 
 //        testInstrumentationRunnerArguments["androidx.benchmark.suppressErrors"] = "EMULATOR"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions {
+        managedDevices {
+            devices {
+                create("pixelapi34", ManagedVirtualDevice::class) {
+                    device = "Pixel 7"
+                    apiLevel = 34
+                    systemImageSource = "aosp"
+                }
+            }
+            // test runner config
+            // [:benchmark:pixelapi34BenchmarkAndroidTest -P android.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=BaselineProfile]
+        }
     }
 
     buildTypes {

@@ -1,5 +1,6 @@
 package com.example.benchmark
 
+import androidx.benchmark.macro.CompilationMode
 import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.benchmark.macro.StartupMode
 import androidx.benchmark.macro.StartupTimingMetric
@@ -29,11 +30,16 @@ class ExampleStartupBenchmark {
     val benchmarkRule = MacrobenchmarkRule()
 
     @Test
-    fun startup() = benchmarkRule.measureRepeated(
+    fun startupCompilationNone() = startup(CompilationMode.None())
+    @Test
+    fun startupCompilationPartial() = startup(CompilationMode.Partial())
+
+    fun startup(mode: CompilationMode) = benchmarkRule.measureRepeated(
         packageName = "com.example.noteapp_architecture_sample",
         metrics = listOf(StartupTimingMetric()),
         iterations = 5,
         startupMode = StartupMode.COLD,
+        compilationMode = mode,
         setupBlock = {
             pressHome()
         }

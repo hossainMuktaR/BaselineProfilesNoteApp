@@ -33,6 +33,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks += listOf("release")
             isDebuggable = false
+            proguardFiles("baseline-profiles-rules.pro")
         }
     }
     compileOptions {
@@ -91,6 +92,6 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
 
     //profile installer
-//    implementation(libs.androidx.profileinstaller)
+    implementation(libs.androidx.profileinstaller)
 
 }
