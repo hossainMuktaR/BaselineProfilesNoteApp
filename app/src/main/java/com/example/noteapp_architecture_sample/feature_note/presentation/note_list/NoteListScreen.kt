@@ -1,5 +1,6 @@
 package com.example.noteapp_architecture_sample.feature_note.presentation.note_list
 
+import androidx.activity.compose.ReportDrawn
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -159,5 +160,7 @@ fun NoteListScreen(
                 }
             }
         }
+        ReportDrawn()
     }
+
 }

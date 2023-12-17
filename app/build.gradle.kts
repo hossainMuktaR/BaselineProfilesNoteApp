@@ -3,9 +3,7 @@ plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
     alias(libs.plugins.com.google.dagger.hilt.android)
-
     id(libs.plugins.google.devtools.ksp.get().pluginId)
-    id(libs.plugins.kotlin.kapt.get().pluginId)
 }
 
 android {
@@ -13,7 +11,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.noteapp_cleanarch_mvi_mvvm"
+        applicationId = "com.example.noteapp_architecture_sample"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -27,8 +25,14 @@ android {
 
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        create("benchmark") {
+            initWith(buildTypes.getByName("release"))
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
         }
     }
     compileOptions {
@@ -72,8 +76,8 @@ dependencies {
 
     // Dagger-Hilt
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
-    kapt(libs.hilt.android.compiler)
+    ksp(libs.hilt.compiler)
+    ksp(libs.hilt.android.compiler)
 
     // Room
     implementation(libs.room.runtime)
@@ -85,9 +89,8 @@ dependencies {
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
-}
 
-// Allow references to generated code
-kapt {
-    correctErrorTypes = true
+    //profile installer
+//    implementation(libs.androidx.profileinstaller)
+
 }

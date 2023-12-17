@@ -12,5 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "NoteApp-Architecture-Sample"
+rootProject.name = "BaselineProfilesNoteApp"
 include(":app")
+include(":benchmark")
