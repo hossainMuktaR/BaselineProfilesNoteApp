@@ -5,6 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.ui.ExperimentalComposeUiApi
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -18,6 +22,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    @OptIn(ExperimentalComposeUiApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -25,7 +30,10 @@ class MainActivity : ComponentActivity() {
                 Surface(color = MaterialTheme.colorScheme.background)
                 {
                     val navController = rememberNavController()
-                    NavHost(navController = navController, startDestination = Screen.NoteListScreen.route )
+                    NavHost(navController = navController, startDestination = Screen.NoteListScreen.route,
+                        modifier = Modifier.semantics {
+                            testTagsAsResourceId = true
+                        })
                     {
                         composable(
                             route = Screen.NoteListScreen.route

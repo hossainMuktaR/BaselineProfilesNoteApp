@@ -1,5 +1,6 @@
 package com.example.benchmark
 
+import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.benchmark.macro.StartupMode
 import androidx.benchmark.macro.StartupTimingMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
@@ -39,6 +40,13 @@ class ExampleStartupBenchmark {
     ) {
         startActivityAndWait()
 
+        goAddEditNoteAndWait()
+    }
+
+    private fun MacrobenchmarkScope.goAddEditNoteAndWait() {
         device.wait(Until.hasObject(By.text("Your Note")), 5_000)
+        val faButton = device.findObject(By.res("Button:FA"))
+        faButton.click()
+        device.wait(Until.hasObject(By.res("button:FA")), 5_000)
     }
 }
