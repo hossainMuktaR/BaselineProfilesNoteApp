@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="BaselineProfileGenerator">
+        <State />
+      </entry>
       <entry key="ExampleStartupBenchmark">
         <State />
       </entry>
@@ -20,12 +23,6 @@
           </runningDeviceTargetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2023-12-17T20:52:39.853533487Z" />
         </State>
-      </entry>
-      <entry key="generateBaselineProfile()">
-        <State />
-      </entry>
-      <entry key="startup()">
-        <State />
       </entry>
     </value>
   </component>

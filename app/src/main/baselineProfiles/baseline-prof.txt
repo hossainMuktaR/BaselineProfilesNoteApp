@@ -1216,6 +1216,7 @@ PLandroidx/compose/material/ripple/RippleAnimationKt;->getRippleEndRadius-cSwnlz
 Landroidx/compose/material/ripple/RippleContainer;
 HSPLandroidx/compose/material/ripple/RippleContainer;-><init>(Landroid/content/Context;)V
 Landroidx/compose/material/ripple/RippleHostView;
+PLandroidx/compose/material/ripple/RippleHostView;->$r8$lambda$4nztiuYeQHklB-09QfMAnp7Ay8E(Landroidx/compose/material/ripple/RippleHostView;)V
 HSPLandroidx/compose/material/ripple/RippleHostView;-><clinit>()V
 PLandroidx/compose/material/ripple/RippleHostView;->addRipple-KOepWvA(Landroidx/compose/foundation/interaction/PressInteraction$Press;ZJIJFLandroidx/navigation/NavController$navInflater$2;)V
 PLandroidx/compose/material/ripple/RippleHostView;->disposeRipple()V
@@ -1827,7 +1828,7 @@ HSPLandroidx/compose/runtime/SlotReader;-><init>(Landroidx/compose/runtime/SlotT
 HSPLandroidx/compose/runtime/SlotReader;->anchor(I)Landroidx/compose/runtime/Anchor;
 PLandroidx/compose/runtime/SlotReader;->aux([II)Ljava/lang/Object;
 HSPLandroidx/compose/runtime/SlotReader;->close()V
-HPLandroidx/compose/runtime/SlotReader;->endGroup()V
+PLandroidx/compose/runtime/SlotReader;->endGroup()V
 PLandroidx/compose/runtime/SlotReader;->getGroupAux()Ljava/lang/Object;
 HSPLandroidx/compose/runtime/SlotReader;->getGroupKey()I
 PLandroidx/compose/runtime/SlotReader;->groupGet(II)Ljava/lang/Object;
@@ -3888,8 +3889,6 @@ Landroidx/compose/ui/platform/TextToolbar;
 Landroidx/compose/ui/platform/UriHandler;
 Landroidx/compose/ui/platform/ViewConfiguration;
 PLandroidx/compose/ui/platform/ViewConfiguration;->getMinimumTouchTargetSize-MYxV2XQ()J
-Landroidx/compose/ui/platform/ViewLayer;
-HSPLandroidx/compose/ui/platform/ViewLayer;-><clinit>()V
 PLandroidx/compose/ui/platform/ViewLayer;-><clinit>()V
 Landroidx/compose/ui/platform/ViewLayer$Companion;
 HSPLandroidx/compose/ui/platform/ViewLayer$Companion;-><clinit>()V
@@ -4487,8 +4486,6 @@ HSPLandroidx/compose/ui/unit/TextUnitType;->equals-impl0(JJ)Z
 Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;
 HSPLandroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;-><init>(Landroidx/compose/ui/layout/SubcomposeLayoutState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;II)V
 HSPLandroidx/compose/ui/window/AndroidPopup_androidKt$Popup$9;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;III)V
-Landroidx/compose/ui/window/PopupLayout$2;
-HSPLandroidx/compose/ui/window/PopupLayout$2;-><init>(I)V
 PLandroidx/compose/ui/window/PopupLayout$2;-><init>(I)V
 Landroidx/compose/ui/window/PopupLayout$Content$4;
 HSPLandroidx/compose/ui/window/PopupLayout$Content$4;-><init>(IILjava/lang/Object;)V
@@ -5609,7 +5606,6 @@ HSPLkotlin/TuplesKt;->access$lowestBitOf(J)I
 PLkotlin/TuplesKt;->adapt$default(Landroidx/compose/ui/graphics/colorspace/ColorSpace;)Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 PLkotlin/TuplesKt;->animate(Landroidx/compose/animation/core/AnimationState;Landroidx/compose/animation/core/Animation;JLkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 HSPLkotlin/TuplesKt;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-PLkotlin/TuplesKt;->binarySearch([II)I
 PLkotlin/TuplesKt;->callWithFrameNanos(Landroidx/compose/animation/core/Animation;Lkotlin/jvm/functions/Function1;Landroidx/compose/animation/core/SuspendAnimationKt$animate$4;)Ljava/lang/Object;
 PLkotlin/TuplesKt;->cancel(Lkotlinx/coroutines/CoroutineScope;Landroidx/lifecycle/LifecycleDestroyedException;)V
 PLkotlin/TuplesKt;->cancelConsumed(Lkotlinx/coroutines/channels/ReceiveChannel;Ljava/lang/Throwable;)V
@@ -5733,7 +5729,6 @@ HSPLkotlin/collections/CollectionsKt___CollectionsKt;->maxOrNull(Ljava/util/Arra
 HSPLkotlin/collections/CollectionsKt___CollectionsKt;->plus(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/ArrayList;
 HSPLkotlin/collections/CollectionsKt___CollectionsKt;->reversed(Ljava/util/AbstractList;)Ljava/util/List;
 PLkotlin/collections/CollectionsKt___CollectionsKt;->sortedWith(Ljava/lang/Iterable;Landroidx/compose/ui/node/DepthSortedSet$DepthComparator$1;)Ljava/util/List;
-PLkotlin/collections/CollectionsKt___CollectionsKt;->toIntArray(Ljava/util/ArrayList;)[I
 PLkotlin/collections/CollectionsKt___CollectionsKt;->toList(Ljava/lang/Iterable;)Ljava/util/List;
 HSPLkotlin/collections/CollectionsKt___CollectionsKt;->toMutableList(Ljava/lang/Iterable;)Ljava/util/List;
 HSPLkotlin/collections/CollectionsKt___CollectionsKt;->toMutableList(Ljava/util/Collection;)Ljava/util/ArrayList;

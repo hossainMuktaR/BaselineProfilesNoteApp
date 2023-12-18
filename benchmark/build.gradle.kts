@@ -20,26 +20,26 @@ android {
     }
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 28
         targetSdk = 34
 
 //        testInstrumentationRunnerArguments["androidx.benchmark.suppressErrors"] = "EMULATOR"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    testOptions {
-        managedDevices {
-            devices {
-                create("pixelapi34", ManagedVirtualDevice::class) {
-                    device = "Pixel 7"
-                    apiLevel = 34
-                    systemImageSource = "aosp"
-                }
-            }
-            // test runner config
-            // [:benchmark:pixelapi34BenchmarkAndroidTest -P android.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=BaselineProfile]
-        }
-    }
+//    testOptions {
+//        managedDevices {
+//            devices {
+//                create("pixelapi34", ManagedVirtualDevice::class) {
+//                    device = "Pixel 7"
+//                    apiLevel = 34
+//                    systemImageSource = "aosp"
+//                }
+//            }
+//            // test runner config
+//            // [:benchmark:pixelapi34BenchmarkAndroidTest -P android.testInstrumentationRunnerArguments.androidx.benchmark.enabledRules=BaselineProfile]
+//        }
+//    }
 
     buildTypes {
         // This benchmark buildType is used for benchmarking, and should function like your

@@ -1,5 +1,6 @@
 package com.example.benchmark
 
+import androidx.benchmark.macro.BaselineProfileMode
 import androidx.benchmark.macro.CompilationMode
 import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.benchmark.macro.StartupMode
@@ -32,7 +33,7 @@ class ExampleStartupBenchmark {
     @Test
     fun startupCompilationNone() = startup(CompilationMode.None())
     @Test
-    fun startupCompilationPartial() = startup(CompilationMode.Partial())
+    fun startupCompilationPartial() = startup(CompilationMode.Partial(BaselineProfileMode.Require))
 
     fun startup(mode: CompilationMode) = benchmarkRule.measureRepeated(
         packageName = "com.example.noteapp_architecture_sample",
