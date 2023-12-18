@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "BaselineProfilesNoteApp"
 include(":app")
-include(":benchmark")
+include(":baselineprofile")

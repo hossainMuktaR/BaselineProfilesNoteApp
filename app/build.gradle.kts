@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.org.jetbrains.kotlin.android)
     alias(libs.plugins.com.google.dagger.hilt.android)
     id(libs.plugins.google.devtools.ksp.get().pluginId)
+    alias(libs.plugins.androidx.baselineprofile)
+
 }
 
 android {
@@ -22,19 +24,26 @@ android {
             useSupportLibrary = true
         }
     }
+    signingConfigs {
+//        // We use a bundled debug keystore, to allow debug builds from CI to be upgradable
+//        getByName("debug") {
+//            storeFile = rootProject.file("debug.keystore")
+//            storePassword = "android"
+//            keyAlias = "androiddebugkey"
+//            keyPassword = "android"
+//        }
+    }
 
     buildTypes {
+//        getByName("debug") {
+//            signingConfig = signingConfigs.getByName("debug")
+//        }
         getByName("release") {
             isMinifyEnabled = true
+            signingConfig = signingConfigs.getByName("debug")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-        create("benchmark") {
-            initWith(buildTypes.getByName("release"))
-            signingConfig = signingConfigs.getByName("debug")
-            matchingFallbacks += listOf("release")
-            isDebuggable = false
-            proguardFiles("baseline-profiles-rules.pro")
-        }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -93,5 +102,6 @@ dependencies {
 
     //profile installer
     implementation(libs.androidx.profileinstaller)
+    "baselineProfile"(project(mapOf("path" to ":baselineprofile")))
 
 }

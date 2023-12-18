@@ -1,18 +1,16 @@
 package com.example.benchmark
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.benchmark.macro.junit4.BaselineProfileRule
-import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.uiautomator.By
 import androidx.test.uiautomator.Until
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
-@RequiresApi(Build.VERSION_CODES.P)
-@RunWith(AndroidJUnit4ClassRunner::class)
+
+@RunWith(AndroidJUnit4::class)
 class BaselineProfileGenerator {
 
 

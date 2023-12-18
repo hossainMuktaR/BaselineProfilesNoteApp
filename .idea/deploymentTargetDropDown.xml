@@ -6,25 +6,6 @@
         <State />
       </entry>
       <entry key="app">
-        <State>
-          <runningDeviceTargetSelectedWithDropDown>
-            <Target>
-              <type value="RUNNING_DEVICE_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="SERIAL_NUMBER" />
-                  <value value="147e78b3" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </runningDeviceTargetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2023-12-17T20:52:39.853533487Z" />
-        </State>
-      </entry>
-      <entry key="generateBaselineProfile()">
-        <State />
-      </entry>
-      <entry key="startup()">
         <State />
       </entry>
     </value>
