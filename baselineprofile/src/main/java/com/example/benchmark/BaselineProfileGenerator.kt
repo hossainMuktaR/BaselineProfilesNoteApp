@@ -21,6 +21,7 @@ class BaselineProfileGenerator {
     fun generateBaselineProfile() = rule.collect(
         packageName = "com.example.noteapp_architecture_sample"
     ) {
+        pressHome()
         startActivityAndWait()
 
         goAddEditNoteAndWait()

@@ -2774,8 +2774,8 @@ PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->access$setI
 PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->addRipple(Landroidx/compose/foundation/interaction/PressInteraction$Press;Lkotlinx/coroutines/CoroutineScope;)V
 PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->dispose()V
 HSPLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->drawIndication(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->getInvalidateTick()Z
-PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->getRippleHostView()Landroidx/compose/material/ripple/RippleHostView;
+HSPLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->getInvalidateTick()Z
+HSPLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->getRippleHostView()Landroidx/compose/material/ripple/RippleHostView;
 PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->onForgotten()V
 HSPLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->onRemembered()V
 PLandroidx/compose/material/ripple/AndroidRippleIndicationInstance;->removeRipple(Landroidx/compose/foundation/interaction/PressInteraction$Press;)V
@@ -2840,7 +2840,7 @@ HSPLandroidx/compose/material/ripple/RippleHostView$Companion;-><init>()V
 HSPLandroidx/compose/material/ripple/RippleHostView$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 Landroidx/compose/material/ripple/RippleIndicationInstance;
 HSPLandroidx/compose/material/ripple/RippleIndicationInstance;-><init>(ZLandroidx/compose/runtime/State;)V
-PLandroidx/compose/material/ripple/RippleIndicationInstance;->drawStateLayer-H2RKhps(Landroidx/compose/ui/graphics/drawscope/DrawScope;FJ)V
+HSPLandroidx/compose/material/ripple/RippleIndicationInstance;->drawStateLayer-H2RKhps(Landroidx/compose/ui/graphics/drawscope/DrawScope;FJ)V
 Landroidx/compose/material/ripple/RippleKt;
 HSPLandroidx/compose/material/ripple/RippleKt;-><clinit>()V
 HSPLandroidx/compose/material/ripple/RippleKt;->rememberRipple-9IZ8Weo(ZFJLandroidx/compose/runtime/Composer;II)Landroidx/compose/foundation/Indication;
@@ -5943,7 +5943,7 @@ HSPLandroidx/compose/ui/geometry/Size;->equals-impl0(JJ)Z
 HSPLandroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
 HSPLandroidx/compose/ui/geometry/Size;->getMinDimension-impl(J)F
 HSPLandroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
-PLandroidx/compose/ui/geometry/Size;->isEmpty-impl(J)Z
+HSPLandroidx/compose/ui/geometry/Size;->isEmpty-impl(J)Z
 HSPLandroidx/compose/ui/geometry/Size;->unbox-impl()J
 Landroidx/compose/ui/geometry/Size$Companion;
 HSPLandroidx/compose/ui/geometry/Size$Companion;-><init>()V
@@ -5980,8 +5980,8 @@ HSPLandroidx/compose/ui/graphics/AndroidColorFilter_androidKt;->asAndroidColorFi
 Landroidx/compose/ui/graphics/AndroidColorSpace_androidKt;
 HSPLandroidx/compose/ui/graphics/AndroidColorSpace_androidKt;->toAndroidColorSpace(Landroidx/compose/ui/graphics/colorspace/ColorSpace;)Landroid/graphics/ColorSpace;
 Landroidx/compose/ui/graphics/AndroidImageBitmap;
-PLandroidx/compose/ui/graphics/AndroidImageBitmap;-><init>(Landroid/graphics/Bitmap;)V
-PLandroidx/compose/ui/graphics/AndroidImageBitmap;->getBitmap$ui_graphics_release()Landroid/graphics/Bitmap;
+HSPLandroidx/compose/ui/graphics/AndroidImageBitmap;-><init>(Landroid/graphics/Bitmap;)V
+HSPLandroidx/compose/ui/graphics/AndroidImageBitmap;->getBitmap$ui_graphics_release()Landroid/graphics/Bitmap;
 HSPLandroidx/compose/ui/graphics/AndroidImageBitmap;->prepareToDraw()V
 Landroidx/compose/ui/graphics/AndroidImageBitmap_androidKt;
 HSPLandroidx/compose/ui/graphics/AndroidImageBitmap_androidKt;->ActualImageBitmap-x__-hDU(IIIZLandroidx/compose/ui/graphics/colorspace/ColorSpace;)Landroidx/compose/ui/graphics/ImageBitmap;
@@ -6104,7 +6104,7 @@ Landroidx/compose/ui/graphics/CanvasHolder;
 HSPLandroidx/compose/ui/graphics/CanvasHolder;-><init>()V
 HSPLandroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
 Landroidx/compose/ui/graphics/CanvasKt;
-PLandroidx/compose/ui/graphics/CanvasKt;->Canvas(Landroidx/compose/ui/graphics/ImageBitmap;)Landroidx/compose/ui/graphics/Canvas;
+HSPLandroidx/compose/ui/graphics/CanvasKt;->Canvas(Landroidx/compose/ui/graphics/ImageBitmap;)Landroidx/compose/ui/graphics/Canvas;
 Landroidx/compose/ui/graphics/CanvasUtils;
 HSPLandroidx/compose/ui/graphics/CanvasUtils;-><clinit>()V
 HSPLandroidx/compose/ui/graphics/CanvasUtils;-><init>()V
@@ -6258,7 +6258,7 @@ HSPLandroidx/compose/ui/graphics/Outline$Rectangle;->getRect()Landroidx/compose/
 Landroidx/compose/ui/graphics/Outline$Rounded;
 HSPLandroidx/compose/ui/graphics/Outline$Rounded;-><init>(Landroidx/compose/ui/geometry/RoundRect;)V
 HSPLandroidx/compose/ui/graphics/Outline$Rounded;->getRoundRect()Landroidx/compose/ui/geometry/RoundRect;
-PLandroidx/compose/ui/graphics/Outline$Rounded;->getRoundRectPath$ui_graphics_release()Landroidx/compose/ui/graphics/Path;
+HSPLandroidx/compose/ui/graphics/Outline$Rounded;->getRoundRectPath$ui_graphics_release()Landroidx/compose/ui/graphics/Path;
 Landroidx/compose/ui/graphics/OutlineKt;
 HSPLandroidx/compose/ui/graphics/OutlineKt;->access$hasSameCornerRadius(Landroidx/compose/ui/geometry/RoundRect;)Z
 HSPLandroidx/compose/ui/graphics/OutlineKt;->drawOutline-wDX37Ww$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Outline;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
@@ -6433,7 +6433,7 @@ HSPLandroidx/compose/ui/graphics/TransformOriginKt;->TransformOrigin(FF)J
 Landroidx/compose/ui/graphics/WrapperVerificationHelperMethods;
 HSPLandroidx/compose/ui/graphics/WrapperVerificationHelperMethods;-><clinit>()V
 HSPLandroidx/compose/ui/graphics/WrapperVerificationHelperMethods;-><init>()V
-PLandroidx/compose/ui/graphics/WrapperVerificationHelperMethods;->setBlendMode-GB0RdKg(Landroid/graphics/Paint;I)V
+HSPLandroidx/compose/ui/graphics/WrapperVerificationHelperMethods;->setBlendMode-GB0RdKg(Landroid/graphics/Paint;I)V
 Landroidx/compose/ui/graphics/colorspace/Adaptation;
 HSPLandroidx/compose/ui/graphics/colorspace/Adaptation;-><clinit>()V
 HSPLandroidx/compose/ui/graphics/colorspace/Adaptation;-><init>([F)V
@@ -11552,7 +11552,7 @@ PLandroidx/emoji2/text/MetadataListReader$ByteBufferReader;->skip(I)V
 PLandroidx/emoji2/text/MetadataListReader$OffsetInfo;-><init>(JJ)V
 PLandroidx/emoji2/text/MetadataListReader$OffsetInfo;->getStartOffset()J
 PLandroidx/emoji2/text/MetadataRepo;-><init>(Landroid/graphics/Typeface;Landroidx/emoji2/text/flatbuffer/MetadataList;)V
-HPLandroidx/emoji2/text/MetadataRepo;->constructIndex(Landroidx/emoji2/text/flatbuffer/MetadataList;)V
+PLandroidx/emoji2/text/MetadataRepo;->constructIndex(Landroidx/emoji2/text/flatbuffer/MetadataList;)V
 PLandroidx/emoji2/text/MetadataRepo;->create(Landroid/graphics/Typeface;Ljava/nio/ByteBuffer;)Landroidx/emoji2/text/MetadataRepo;
 PLandroidx/emoji2/text/MetadataRepo;->getMetadataList()Landroidx/emoji2/text/flatbuffer/MetadataList;
 PLandroidx/emoji2/text/MetadataRepo;->getRootNode()Landroidx/emoji2/text/MetadataRepo$Node;

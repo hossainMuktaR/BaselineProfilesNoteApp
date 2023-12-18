@@ -24,24 +24,27 @@ android {
         minSdk = 28
         targetSdk = 34
 
-//        testInstrumentationRunnerArguments["androidx.benchmark.suppressErrors"] = "EMULATOR"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     targetProjectPath = ":app"
+//    for managevirtualdevice baseline generate
+//    [:app:generateBaselineProfile -Pandroid.testInstrumentationRunnerArguments
+//    .androidx.benchmark.enabledRules=BaselineProfile]
 
 //    testOptions.managedDevices.devices {
-//        create<ManagedVirtualDevice>("pixel7api34") {
-//            device = "Pixel 7"
+//        create<ManagedVirtualDevice>("pixel7proapi34") {
+//            device = "Pixel 7 Pro"
 //            apiLevel = 34
 //            systemImageSource = "aosp"
 //        }
 //    }
 }
+
 // This is the configuration block for the Baseline Profile plugin.
 // You can specify to run the generators on a managed devices or connected devices.
 baselineProfile {
-//    managedDevices += "pixel7api34"
+//    managedDevices += "pixel7proapi34"
     useConnectedDevices = true
 }
 
